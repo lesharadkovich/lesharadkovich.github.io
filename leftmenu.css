@@ -9,28 +9,21 @@ body {
 }
 
 i {
-    font-size: .875rem;
+    font-size: 9px;
 }
 
-
-.clearfix:after {
-    content: '';
-    display: table;
-    width: 100%;
-    clear: both;
-}
 
 .block {
     padding-left: 16px;
 }
 
-.title div {
-    float: left;
+.title {
+    display: flex;
+    justify-content: space-between;
 }
 
 .title i {
     margin-right: 10px;
-    float: right;
 }
 
 .title div:hover, .title i:hover {

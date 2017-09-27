@@ -3,41 +3,68 @@
     height: 50px;
     background: white;
     position: fixed;
-    /* display: flex; */
+    display: flex;
     padding-top: 10px;
     padding-left: 20px;
+    justify-content: space-between;
 }
 
 #channelName {
     font-size: 17px;
     font-weight: 900;
-    float: left;
+    display: flex;
+}
+
+#channelInfo, #right {
+    color: #717274;
 }
 
 #right {
     margin-right: 40px;
-    float: right;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 #right input {
     width: 300px;
-    height: 30px;
+    height: 40px;
     padding-top: 0;
 
-    /* border: 1px solid #cccccc; 
-    border-radius: 3px; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
     background: #ffffff;
     outline: none;
     height: 30px;
-    color: #cccccc; */
+    color: black;
 }
 
 #right i, #right input {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
-#right i:hover {
+
+.blue:hover {
     transition-duration: 0.3s;
     color: #0576B9;
     cursor: pointer;
+}
+
+.red:hover {
+    transition-duration: 0.3s;
+    color: #eb4d5c;
+    cursor: pointer;
+}
+
+.gold:hover {
+    transition-duration: 0.3s;
+    color: #fC0;
+    cursor: pointer;
+}
+
+#topic:hover {
+    transition-duration: 0.1s;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    box-sizing: padding-box;
 }
