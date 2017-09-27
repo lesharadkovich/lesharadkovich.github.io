@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Slack-Lato,appleLogo, sans-serif;
+    font-size: 15px;
+}
+
+#main {
+    display: flex;
+}
+
+i {
+    font-size: .875rem;
+}
+
+
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.block {
+    padding-left: 16px;
+}
+
+.title div {
+    float: left;
+}
+
+.title i {
+    margin-right: 10px;
+    float: right;
+}
+
+.title div:hover, .title i:hover {
+    transition-duration: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+#leftmenu {
+    width: 220px;
+    height: 100vh;
+    background: #4D394B;
+    color: rgb(202,196,201);
+}
+
+#account {
+    padding-top: 15px;
+    padding-bottom: 10px; 
+}
+
+#teamname {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#username {
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: #AB9BA9;
+}
+
+#threads {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#threads div {
+    display: inline;
+}
+
+
+.list {
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.list li {
+    list-style-type: none;
+    padding: 5px 5px 5px 16px;
+}
+
+.online {
+    color: #38978D;
+}
+
+.hovering:hover {
+    background: #3e313c;
+    cursor: pointer;
+}

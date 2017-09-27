@@ -1,0 +1,43 @@
+#channelHeader {
+    width: 1700px;
+    height: 50px;
+    background: white;
+    position: fixed;
+    /* display: flex; */
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#channelName {
+    font-size: 17px;
+    font-weight: 900;
+    float: left;
+}
+
+#right {
+    margin-right: 40px;
+    float: right;
+}
+
+#right input {
+    width: 300px;
+    height: 30px;
+    padding-top: 0;
+
+    /* border: 1px solid #cccccc; 
+    border-radius: 3px; 
+    background: #ffffff;
+    outline: none;
+    height: 30px;
+    color: #cccccc; */
+}
+
+#right i, #right input {
+    margin-left: 10px;
+}
+
+#right i:hover {
+    transition-duration: 0.3s;
+    color: #0576B9;
+    cursor: pointer;
+}
