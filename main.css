@@ -2,11 +2,6 @@
     display: flex;
 }
 
-#chat {
-    width: 1273px;
-    height: 100vh;
-    background: gray;
-}
 
 #about {
     width: 427px;

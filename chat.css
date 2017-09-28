@@ -1,0 +1,45 @@
+#chat {
+    width: 1273px;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: flex-end;
+}
+
+#messageInput {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+#plusbutton {
+    color: #A0A0A2;
+}
+
+#messageInput div {
+    margin: 20px 0 10px 10px;
+}
+
+#messageInput form {
+    margin: 20px 0 10px 3px;
+    width: inherit;
+}
+
+#messageInput form input {
+    width: 95%;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #A0A0A2; 
+    border-radius: 5px; 
+    background: #ffffff;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.green:hover {
+    transition-duration: 0.1s;
+    color: #56B68B;
+    cursor: pointer;
+}
