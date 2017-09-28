@@ -1,16 +1,58 @@
 #chat {
-    width: 1273px;
-    height: 100vh;
+    width: 70%;
     background: #fff;
-    display: flex;
-    align-items: flex-end;
+    border-right: 1px solid lightgray;
 }
 
-#messageInput {
-    width: inherit;
+#messages {
+    overflow-y: auto;
+    height: 92%;
+}
+
+.message {
     display: flex;
-    justify-content: center;
-    position: fixed;
+    /* width: inherit; */
+    margin: 10px 0 10px 10px;
+}
+
+.username {
+    font-weight: 900;
+    margin-left: 7px;
+    display: inline;
+}
+
+.messageText {
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #AB9BA9;
+}
+
+.message:hover {
+    background-color: #f9f9f9;
+    opacity: 0.7;
+}
+
+.message .avatar:hover{
+    cursor: pointer;
+}
+
+.message .username:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+#messageInput {
+    width: 100%;
+    display: flex;
 }
 
 #plusbutton {
@@ -28,7 +70,7 @@
 
 #messageInput form input {
     width: 95%;
-    height: 45px;
+    height: 40px;
     padding-left: 10px;
     border: 1px solid #A0A0A2; 
     border-radius: 5px; 

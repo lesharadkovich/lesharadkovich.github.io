@@ -1,18 +1,3 @@
-body {
-    margin: 0;
-    font-family: Slack-Lato,appleLogo, sans-serif;
-    font-size: 15px;
-}
-
-#main {
-    display: flex;
-}
-
-i {
-    font-size: 9px;
-}
-
-
 .block {
     padding-left: 16px;
 }
@@ -37,6 +22,7 @@ i {
     height: 100vh;
     background: #4D394B;
     color: rgb(202,196,201);
+    flex-shrink: 0;
 }
 
 #account {

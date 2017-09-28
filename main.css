@@ -1,10 +1,28 @@
-#fl {
+body {
+    margin: 0;
+    font-family: Slack-Lato,appleLogo, sans-serif;
+    font-size: 15px;
+}
+
+#main {
     display: flex;
 }
 
+i {
+    font-size: 9px;
+}
+
+
+#content {
+    width: 100%;
+}
+
+#fl {
+    display: flex;
+    height: 93.5vh;
+}
 
 #about {
-    width: 427px;
-    height: 100vh;
-    background: darkgray;
+    width: 30%;
+    background: #f9f9f9;
 }
