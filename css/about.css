@@ -29,3 +29,36 @@
     opacity: 1;
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}
+
+.heading:hover .hidden {
+    display: block;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 900;
+    color: #717274;
+    margin-bottom: 5px;
+}
+
+.hiddenBlock {
+    margin-top: 20px;
+}
+
+.hiddenBlock a:not(:hover) {
+    text-decoration: none;
+}
+
+.member {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.member i {
+    margin-left: 5px;
+}

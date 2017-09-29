@@ -13,7 +13,6 @@
 
 .message {
     display: flex;
-    /* width: inherit; */
     margin: 10px 0 10px 10px;
 }
 
@@ -52,6 +51,8 @@
 
 
 
+
+
 #messageInput {
     width: 100%;
     display: flex;
@@ -70,6 +71,7 @@
     background: #56B68B;
     color: #fff;
     border-color: #29a979;
+    cursor: pointer;
 }
 
 #input {
