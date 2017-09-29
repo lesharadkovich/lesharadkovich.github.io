@@ -12,12 +12,19 @@ i {
     font-size: 9px;
 }
 
+a, a:link, a:visited {
+    color: #0576b9;
+}
+
 
 #content {
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #fl {
     display: flex;
-    height: 93.5vh;
+    height: 100%;
 }

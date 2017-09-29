@@ -2,11 +2,13 @@
     width: 75%;
     background: #fff;
     border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
 }
 
 #messages {
     overflow-y: auto;
-    height: 92%;
+    height: 95%;
 }
 
 .message {
@@ -53,31 +55,41 @@
 #messageInput {
     width: 100%;
     display: flex;
+    margin: 0 0 10px 10px;
 }
 
 #plusbutton {
     color: #A0A0A2;
+    font-size: 35px;
+    border: 2px solid #A0A0A2;
+    padding: 0 10px 0 10px;
+    border-radius: 8px 0 0 8px;
 }
 
-#messageInput div {
-    margin: 20px 0 10px 10px;
+#plusbutton:hover {
+    background: #56B68B;
+    color: #fff;
+    border-color: #29a979;
 }
 
-#messageInput form {
-    margin: 20px 0 10px 3px;
-    width: inherit;
-}
-
-#messageInput form input {
-    width: 95%;
-    height: 40px;
+#input {
+    width: 92%;
     padding-left: 10px;
-    border: 1px solid #A0A0A2; 
-    border-radius: 5px; 
-    background: #ffffff;
+    border: 2px solid #A0A0A2; 
+    border-left-width: 0px;
+    border-radius: 0 8px 8px 0;
     outline: none;
-    color: black;
     font-size: 16px;
+    padding: 10px;
+}
+
+[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+[placeholder]:not(:empty):before {
+    content: "";
 }
 
 .green:hover {

@@ -23,6 +23,7 @@
     background: #4D394B;
     color: rgb(202,196,201);
     flex-shrink: 0;
+    overflow-y: auto;
 }
 
 #account {

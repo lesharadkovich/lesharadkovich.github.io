@@ -1,5 +1,5 @@
 #channelHeader {
-    height: 5%;
+    height: 50px;
     background: white;
     display: flex;
     padding-top: 10px;
@@ -36,6 +36,11 @@
     outline: none;
     height: 30px;
     color: black;
+    transition: width 0.4s ease-in-out;
+}
+
+#right input:focus {
+    width: 400px;
 }
 
 #right i, #right input {
