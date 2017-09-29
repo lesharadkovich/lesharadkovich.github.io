@@ -8,7 +8,7 @@
 .heading {
     width: 100%;
     font-size: 16px;
-    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
     padding: 22px 0 22px 10px;
     opacity: 0.7;
     box-sizing: border-box;
@@ -19,11 +19,6 @@
     padding-right: 10px;
 }
 
-.heading:first-child {
-    background: #f9f9f9;
-    font-weight: 900;
-}
-
 .heading:hover {
     transition: 0.1s;
     opacity: 1;
@@ -31,11 +26,9 @@
 }
 
 .hidden {
-    display: none;
-}
-
-.heading:hover .hidden {
-    display: block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
 .label {
@@ -46,7 +39,7 @@
 }
 
 .hiddenBlock {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hiddenBlock a:not(:hover) {
@@ -54,6 +47,7 @@
 }
 
 .member {
+    margin-bottom: 10px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -61,4 +55,41 @@
 
 .member i {
     margin-left: 5px;
+}
+
+
+@keyframes invisiblyGrowFontSize {
+	0% {
+        font-size: 0;
+        opacity: 0;
+    }
+    
+	100% {
+        font-size: 1em;
+        opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.details-animated[open] .hidden {
+    animation-name: invisiblyGrowFontSize, fadeIn;
+    animation-duration: 500ms, 200ms;
+    animation-delay: 0ms, 500ms;
+}
+
+summary {
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
 }

@@ -49,19 +49,19 @@
 
 
 .blue:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     color: #0576B9;
     cursor: pointer;
 }
 
 .red:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     color: #eb4d5c;
     cursor: pointer;
 }
 
 .gold:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     color: #fC0;
     cursor: pointer;
 }

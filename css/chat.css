@@ -13,7 +13,12 @@
 
 .message {
     display: flex;
+    justify-content: space-between;
     margin: 10px 0 10px 10px;
+}
+
+.left-content {
+    display: flex;
 }
 
 .username {
@@ -34,9 +39,42 @@
     color: #AB9BA9;
 }
 
+.message i {
+    font-size: 12px;
+    font-weight: 800;
+    color: #AB9BA9;
+}
+
+.hoverButtons {
+    height: 50%;
+    display: flex;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.hoverButtons i:first-child {
+    /* border-width: 1px 1px 1px 1px; */
+    border-radius: 5px 0 0 5px;
+}
+
+.hoverButtons i:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.hoverButtons i {
+    width: 20px;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: 800;
+    border: 1px solid black;
+}
+
+.message:not(:hover) i, .message:not(:hover) .hoverButtons {
+    display: none;
+}
+
 .message:hover {
     background-color: #f9f9f9;
-    opacity: 0.7;
 }
 
 .message .avatar:hover{
