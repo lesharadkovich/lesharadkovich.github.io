@@ -91,17 +91,18 @@
 
 
 #messageInput {
-    width: 100%;
+    width: 95%;
     display: flex;
     margin: 0 0 10px 10px;
+    border: 2px solid #A0A0A2;
+    border-radius: 8px;
 }
 
 #plusbutton {
     color: #A0A0A2;
     font-size: 35px;
-    border: 2px solid #A0A0A2;
     padding: 0 10px 0 10px;
-    border-radius: 8px 0 0 8px;
+    border-right: 2px solid #A0A0A2;
 }
 
 #plusbutton:hover {
@@ -112,16 +113,13 @@
 }
 
 #input {
-    width: 92%;
+    width: 90%;
     max-width: 1200px;
     max-height: 50px;
     overflow-x: auto;
     overflow-y: auto;
     
     padding-left: 10px;
-    border: 2px solid #A0A0A2; 
-    border-left-width: 0px;
-    border-radius: 0 8px 8px 0;
     outline: none;
     font-size: 16px;
     padding: 10px;
@@ -140,4 +138,15 @@
     transition-duration: 0.1s;
     color: #56B68B;
     cursor: pointer;
+}
+
+#messageInput .button {
+    height: inherit;
+    padding: 10px;
+    color: #A0A0A2;
+    font-size: 20px;
+}
+
+#messageInput .button i:hover {
+    transform: scale(1.2);
 }
