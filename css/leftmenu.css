@@ -24,6 +24,9 @@
     color: rgb(202,196,201);
     flex-shrink: 0;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #account {
@@ -73,5 +76,25 @@
 
 .hovering:hover {
     background: #3e313c;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #38978D;
+    color: white;
+}
+
+.active:hover {
+    background-color: #38978D;
+}
+
+#switcher {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+#switcher:hover {
+    color: white;
     cursor: pointer;
 }

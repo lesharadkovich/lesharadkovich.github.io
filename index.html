@@ -16,61 +16,65 @@
 <body>
     <div id="main">
         <div id='leftmenu'>
-            <div id="account" class="hovering block">
-                
-                <div class="title">
-                    <div id="teamname">AIS</div>
-                    <i class="fa fa-bell-o hovering"></i>
+            <div>
+                <div id="account" class="hovering block">
+                    
+                    <div class="title">
+                        <div id="teamname">AIS</div>
+                        <i class="fa fa-bell-o hovering"></i>
+                    </div>
+
+                    <div id="username"><i class="fa fa-circle online"></i> alexey.radkovich</div>
                 </div>
 
-                <div id="username"><i class="fa fa-circle online"></i> alexey.radkovich</div>
-            </div>
+
+                <div id="threads" class="hovering block">
+                    <i class="fa fa-commenting-o"></i>
+                    <div>All Threads</div>
+                </div>
 
 
-            <div id="threads" class="hovering block">
-                <i class="fa fa-commenting-o"></i>
-                <div>All Threads</div>
-            </div>
+                <div class="">
+                    <div class="title block">
+                        <div>Channels</div>
+                        <i class="fa fa-plus-circle"></i>
+                    </div>
+
+                    <ul class="list">
+                        <li class="hovering"># books</li>
+                        <li class="hovering"># english</li>
+                        <li class="hovering"># general</li>
+                        <li class="hovering"># nodejs</li>
+                        <li class="hovering"># random</li>
+                        <li class="hovering active"># study</li>
+                    </ul>
+                </div>
 
 
-            <div class="">
+
+                <div class="">
+                    <div class="title block">
+                        <div>Direct messages</div>
+                        <i class="fa fa-plus-circle"></i>
+                    </div>
+            
+                    <ul class="list">
+                        <li class="hovering"><i class="fa fa-heart online"></i> slackbot</li>
+                        <li class="hovering"><i class="fa fa-circle online"></i> alexey.radkovich (you)</li>
+                        <li class="hovering"><i class="fa fa-circle online"></i> alexsander.shein</li>
+                        <li class="hovering"><i class="fa fa-circle-o"></i> amokin</li>
+                        <li class="hovering"><i class="fa fa-circle online"></i> ilya.mokin</li>
+                    </ul>
+                </div>
+
+
                 <div class="title block">
-                    <div>Channels</div>
+                    <div>Apps</div>
                     <i class="fa fa-plus-circle"></i>
                 </div>
-
-                <ul class="list">
-                    <li class="hovering"># books</li>
-                    <li class="hovering"># english</li>
-                    <li class="hovering"># general</li>
-                    <li class="hovering"># nodejs</li>
-                    <li class="hovering"># random</li>
-                    <li class="hovering"># study</li>
-                </ul>
             </div>
 
-
-
-            <div class="">
-                <div class="title block">
-                    <div>Direct messages</div>
-                    <i class="fa fa-plus-circle"></i>
-                </div>
-        
-                <ul class="list">
-                    <li class="hovering"><i class="fa fa-heart online"></i> slackbot</li>
-                    <li class="hovering"><i class="fa fa-circle online"></i> alexey.radkovich (you)</li>
-                    <li class="hovering"><i class="fa fa-circle online"></i> alexsander.shein</li>
-                    <li class="hovering"><i class="fa fa-circle-o"></i> amokin</li>
-                    <li class="hovering"><i class="fa fa-circle online"></i> ilya.mokin</li>
-                </ul>
-            </div>
-
-
-            <div class="title block">
-                <div>Apps</div>
-                <i class="fa fa-plus-circle"></i>
-            </div>
+            <div id="switcher"><i class="fa fa-bars"></i></div>
         </div>
 
         <div id="content">
@@ -360,10 +364,11 @@
 
                         <div class="date">Today</div>
 
-                        <div class="message">
+                        <div class="message pinned">
                             <div class="left-content">
                                 <div class="avatar"><img src="img/alexander.shein.png" alt=""></div>
                                 <div>
+                                    <div class="whoPinned"><i class="fa fa-thumb-tack gold"></i>Pinned by ilya.mokin</div>
                                     <div class="username">alexander.shein</div>
                                     <span class="time">11:00 AM</span>
                                     <div class="messageText">
