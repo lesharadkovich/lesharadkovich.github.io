@@ -53,7 +53,6 @@
 }
 
 .hoverButtons i:first-child {
-    /* border-width: 1px 1px 1px 1px; */
     border-radius: 5px 0 0 5px;
 }
 
@@ -114,6 +113,11 @@
 
 #input {
     width: 92%;
+    max-width: 1200px;
+    max-height: 50px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
     padding-left: 10px;
     border: 2px solid #A0A0A2; 
     border-left-width: 0px;

@@ -82,8 +82,8 @@
 
 .details-animated[open] .hidden {
     animation-name: invisiblyGrowFontSize, fadeIn;
-    animation-duration: 500ms, 200ms;
-    animation-delay: 0ms, 500ms;
+    animation-duration: 0.2s, 0.1s;
+    animation-delay: 0s, 0.1s;
 }
 
 summary {
