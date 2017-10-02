@@ -86,10 +86,49 @@
     animation-delay: 0s, 0.1s;
 }
 
+.details-animated[open] .fa-caret-right {
+    transform: rotate(90deg);
+    margin-right: 3px;
+}
+
 summary {
     outline: none;
 }
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+
+.item {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.name {
+    font-weight: 900;
+    display: inline;
+}
+
+.dateOfItem {
+    color: #A0A0A2;
+}
+
+.content {
+    margin-top: 5px;
+    max-height: 115px;
+    overflow-y: hidden;
+}
+
+.content {
+    -webkit-mask-image: -webkit-gradient(linear, left top, 
+    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)));
 }

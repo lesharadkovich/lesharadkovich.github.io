@@ -14,7 +14,8 @@
 .message {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 10px 10px;
+    margin: 10px 0 10px 0;
+    padding-left: 15px;
 }
 
 .left-content {
@@ -153,11 +154,14 @@
 
 
 .date {
+    position: sticky;
+    top: 0px;
+    background-color: white;
     font-size: 15px;
     font-weight: 900;
     text-align: center;
-    border-bottom: 1px solid #A0A0A2;
-    border-top: 1px solid #A0A0A2;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     padding: 5px;
 }
 
