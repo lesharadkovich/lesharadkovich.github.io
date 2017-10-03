@@ -159,11 +159,20 @@
     background-color: white;
     font-size: 15px;
     font-weight: 900;
-    text-align: center;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    padding: 5px;
+    display: flex;
 }
+
+.line {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid lightgray;
+    margin: auto;
+}
+
+.dateName {
+    flex-shrink: 0;
+}
+
 
 .pinned {
     background-color: rgba(255,245,204,.3);
