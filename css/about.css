@@ -12,6 +12,7 @@
     padding: 22px 0 22px 10px;
     opacity: 0.7;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .heading .fa-caret-right, .heading .fa-times {
@@ -78,6 +79,10 @@
     100% {
         opacity: 1;
     }
+}
+
+.details-animated {
+    user-select: none;
 }
 
 .details-animated[open] .hidden {
