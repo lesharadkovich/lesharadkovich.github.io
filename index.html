@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
@@ -16,7 +17,7 @@
 <body>
     <div id="main">
         <div id='leftmenu'>
-            <div>
+            <div id="topmenu">
                 <div id="account" class="hovering block">
                     
                     <div class="title">
@@ -523,181 +524,184 @@
                     </div>
                 </div>
 
-                <div id='about'>
-                    <div class="heading">
-                        <span style="font-weight: 900;">About #study</span>
-                        <i class="fa fa-times blue fa-lg" style="float: right;"></i>
-                    </div>
-
-                    <details class="details-animated">
-                        <summary>
-                            <div class="heading">
-                                <i class="fa fa-info-circle fa-lg" style="color:#717274;"></i>
-                                <span>Channel Details</span>
-                                <i class="fa fa-caret-right fa-lg"></i>
-                            </div>
-                        </summary>
-
-                        <div class="hidden">
-                            <div class="hiddenBlock">
-                                <div class="label">Purpose</div>
-                                <div><a href="#">Set channel purpose</a></div>
-                            </div>
-
-                            <div class="hiddenBlock">
-                                <div class="label">Created</div>
-                                <div><a href="#">Created by ilya.mokin on August 31, 2017</a></div>
-                            </div>
-
-                            <div class="hiddenBlock">
-                                <div class="label">Most active members</div>
-                                
-                                <div class="member">
-                                    <span class="avatar"><img src="img/ilya.mokin.png" alt=""></span>                                    
-                                    <span class="username">ilya.mokin</span>
-                                    <i class="fa fa-circle online"></i>
-                                </div>
-
-                                <div class="member">
-                                    <span class="avatar"><img src="img/alexander.shein.png" alt=""></span>                                    
-                                    <span class="username">alexander.shein</span>
-                                    <i class="fa fa-circle online"></i>
-                                </div>
-
-                                <div class="member">
-                                    <span class="avatar"><img src="img/amokin.png" alt=""></span>                                    
-                                    <span class="username">amokin</span>
-                                    <i class="fa fa-circle-o"></i>
-                                </div>
-                            </div>
+                <div id="aboutWrapper">
+                    <div id='about'>
+                        <div class="heading">
+                            <span style="font-weight: 900;">About #study</span>
+                            <i class="fa fa-times blue fa-lg" style="float: right;"></i>
                         </div>
-                    </details>
 
-                    <div class="heading">
-                        <i class="fa fa-star-o fa-lg" style="color: #2d9ee0"></i>
-                        <span>Highlights</span>
-                        <i class="fa fa-caret-right fa-lg"></i>
-                    </div>
+                        <details class="details-animated">
+                            <summary>
+                                <div class="heading">
+                                    <i class="fa fa-info-circle fa-lg" style="color:#717274;"></i>
+                                    <span>Channel Details</span>
+                                    <i class="fa fa-caret-right fa-lg"></i>
+                                </div>
+                            </summary>
 
-                    <details class="details-animated">
-                        <summary>
-                            <div class="heading">
-                                <i class="fa fa-thumb-tack fa-lg" style="color:#f26130;"></i>
-                                <span>21 Pinned Items</span>
-                                <i class="fa fa-caret-right fa-lg"></i>
-                            </div>
-                        </summary>
+                            <div class="hidden">
+                                <div class="hiddenBlock">
+                                    <div class="label">Purpose</div>
+                                    <div><a href="#">Set channel purpose</a></div>
+                                </div>
 
-                        <div class="hidden">
-                            <div class="item">
-                                <div class="name">normalize.css</div>
-                                <span class="dateOfItem"></span>
-                                <div class="content">CSS</div>
-                            </div>
+                                <div class="hiddenBlock">
+                                    <div class="label">Created</div>
+                                    <div><a href="#">Created by ilya.mokin on August 31, 2017</a></div>
+                                </div>
 
-                            <div class="item">
-                                <div class="name">ilya.mokin</div>
-                                <span class="dateOfItem">Sep 27th</span>
-                                <div class="content">
-                                    <a href="http://htmlbook.ru/css/display">http://htmlbook.ru/css/display</a><br>
-                                    <a href="http://htmlbook.ru/css/position">http://htmlbook.ru/css/position</a><br>
+                                <div class="hiddenBlock">
+                                    <div class="label">Most active members</div>
                                     
-                                    <a href="https://html5book.ru/css3-flexbox/">https://html5book.ru/css3-flexbox/</a><br>
-                                    <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a> - можно использовать эти иконки<br>
-                                    <a href="http://htmlbook.ru/">http://htmlbook.ru/</a><br><br>
-                                    
-                                    
-                                    Задание: <br>
-                                    Сверстать окно slack. (не надо стремиться к 100% соответствию, но должно быть похоже)<br>
-                                    Делаем упор на flexbox. Верстку блочным подходом тоже никто не отменял, их можно комбинировать.<br>
-                                    Выложить результат работы на github. <br>
-                                    Оформить все это через github pages (в настройках можно выбрать ветку для публикации.)<br>
-                                    <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">
-                                        https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
-                                    </a><br>
-                                    На выходе: index.html и css файл (можно несколько css файлов)
+                                    <div class="member">
+                                        <span class="avatar"><img src="img/ilya.mokin.png" alt=""></span>                                    
+                                        <span class="username">ilya.mokin</span>
+                                        <i class="fa fa-circle online"></i>
+                                    </div>
+
+                                    <div class="member">
+                                        <span class="avatar"><img src="img/alexander.shein.png" alt=""></span>                                    
+                                        <span class="username">alexander.shein</span>
+                                        <i class="fa fa-circle online"></i>
+                                    </div>
+
+                                    <div class="member">
+                                        <span class="avatar"><img src="img/amokin.png" alt=""></span>                                    
+                                        <span class="username">amokin</span>
+                                        <i class="fa fa-circle-o"></i>
+                                    </div>
                                 </div>
                             </div>
+                        </details>
 
-                            <div class="item">
-                                <div class="name">alexander.shein</div>
-                                <span class="dateOfItem">Sep 11th</span>
-                                <div class="content">
-                                    Всем привет.<br><br>
-                                    
-                                    Во первых надо сегодня завершить все задания по SQL которые у вас висят. <br><br>
-                                    
-                                    Второе: сегодня презентация будет записанная<br>
-                                    План на сегодня:<br>
-                                    1) Ознакомиться и разобраться с планами запросов - https://www.youtube.com/watch?v=4yHc8-Idf-w&feature=youtu.be<br><br>
-                                    
-                                    2) Посмотреть что есть в T-SQL. Помните мы рассматривали SQL с вами а сейчас 
-                                    посмотрим на расширенный язык T-SQL который работает в SQL Server. 
-                                    Пока смотрите планы запросов я буду редактировать этот пост добавлять ссылки что надо будет почитать и разобрать.<br>
-                                    https://msdn.microsoft.com/en-us/library/ff848809(v=sql.105).aspx<br>
-                                    https://docs.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql<br>
-                                    https://msdn.microsoft.com/en-us/library/ms174290(v=sql.105).aspx<br><br>
-                                    
-                                    3) Разобраться что такое и как создавать Stored Procedures. Добавлю ссылку сюда.<br><br>
-                                    
-                                    4) Задание: написать CRUD операций (4 хранимые процедуры) для работы с Order-ами.
-                                    a) Создать хранимую процедуру которая принимает OrderId возвращает Order и Order Details двумя разными селектами. (GetOrderById)
-                                    б) Создать хранимую процедуру которая принимает OrderID удаляет Order и Order Details по этому ID. (DeleteOrderById)
-                                    в) Создать хранимую процедуру которая принимает в себя информацию о Order и массив Order Details и создает новый Order в системе. (CreateOrder)
-                                    г) Создать хранимую процедуру которая принимает в себя Order ID и информацию о Order и массив Order Details и обновляет Order и его Order Details в системе.
-                                    
-                                    Давайте постараемся завтра до обеда SQL закончить. Задания ваши должны быть на 95% проверены. Смотрите коментарии и фиксайте проблемы. Пока будете изучать я буду проверять ваши задания целый день. Если будут какие то вопросы то пишите.
+                        <div class="heading">
+                            <i class="fa fa-star-o fa-lg" style="color: #2d9ee0"></i>
+                            <span>Highlights</span>
+                            <i class="fa fa-caret-right fa-lg"></i>
+                        </div>
+
+                        <details  class="details-animated">
+                            <summary>
+                                <div class="heading">
+                                    <i class="fa fa-thumb-tack fa-lg" style="color:#f26130;"></i>
+                                    <span>21 Pinned Items</span>
+                                    <i class="fa fa-caret-right fa-lg"></i>
                                 </div>
-                            </div>
+                            </summary>
 
-                            <div class="item">
-                                <div class="name">NODEJS_basic.pptx</div>
-                                <span class="dateOfItem"></span>
-                                <div class="content">PowerPoint Presentation</div>
-                            </div>
-
-                            <div class="item">
-                                <div class="name">alexander.shein</div>
-                                <span class="dateOfItem">Sep 8th</span>
-                                <div class="content">
-                                    1) Postgre SQL<br>
-                                    2) Northwind<br>
-                                    3) 3 Postgre SQL - Вкамитать 24 таском<br>
-                                    4) 4 ошибки транзакций в Postgre SQL - DIRTY READ - 26, LOST UPDATE - 27, REPEATABLE READ - 28, PHANTOM READ- 29<br>
+                            <div class="hidden">
+                                <div class="item">
+                                    <div class="name">normalize.css</div>
+                                    <span class="dateOfItem"></span>
+                                    <div class="content">CSS</div>
                                 </div>
-                            </div>
 
-                            <div class="item">
-                                <div class="name">alexander.shein</div>
-                                <span class="dateOfItem">Sep 7th</span>
-                                <div class="content">
-                                    <a href="https://www.w3schools.com">https://www.w3schools.com</a>
+                                <div class="item">
+                                    <div class="name">ilya.mokin</div>
+                                    <span class="dateOfItem">Sep 27th</span>
+                                    <div class="content">
+                                        <a href="http://htmlbook.ru/css/display">http://htmlbook.ru/css/display</a><br>
+                                        <a href="http://htmlbook.ru/css/position">http://htmlbook.ru/css/position</a><br>
+                                        
+                                        <a href="https://html5book.ru/css3-flexbox/">https://html5book.ru/css3-flexbox/</a><br>
+                                        <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a> - можно использовать эти иконки<br>
+                                        <a href="http://htmlbook.ru/">http://htmlbook.ru/</a><br><br>
+                                        
+                                        
+                                        Задание: <br>
+                                        Сверстать окно slack. (не надо стремиться к 100% соответствию, но должно быть похоже)<br>
+                                        Делаем упор на flexbox. Верстку блочным подходом тоже никто не отменял, их можно комбинировать.<br>
+                                        Выложить результат работы на github. <br>
+                                        Оформить все это через github pages (в настройках можно выбрать ветку для публикации.)<br>
+                                        <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">
+                                            https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
+                                        </a><br>
+                                        На выходе: index.html и css файл (можно несколько css файлов)
+                                    </div>
                                 </div>
-                            </div>
-                    </details>
 
-                    <div class="heading">
-                        <i class="fa fa-user-o fa-lg" style="color:#29a979;"></i>
-                        <span>14 Members</span>
-                        <i class="fa fa-caret-right fa-lg"></i>
-                    </div>
+                                <div class="item">
+                                    <div class="name">alexander.shein</div>
+                                    <span class="dateOfItem">Sep 11th</span>
+                                    <div class="content">
+                                        Всем привет.<br><br>
+                                        
+                                        Во первых надо сегодня завершить все задания по SQL которые у вас висят. <br><br>
+                                        
+                                        Второе: сегодня презентация будет записанная<br>
+                                        План на сегодня:<br>
+                                        1) Ознакомиться и разобраться с планами запросов - https://www.youtube.com/watch?v=4yHc8-Idf-w&feature=youtu.be<br><br>
+                                        
+                                        2) Посмотреть что есть в T-SQL. Помните мы рассматривали SQL с вами а сейчас 
+                                        посмотрим на расширенный язык T-SQL который работает в SQL Server. 
+                                        Пока смотрите планы запросов я буду редактировать этот пост добавлять ссылки что надо будет почитать и разобрать.<br>
+                                        https://msdn.microsoft.com/en-us/library/ff848809(v=sql.105).aspx<br>
+                                        https://docs.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql<br>
+                                        https://msdn.microsoft.com/en-us/library/ms174290(v=sql.105).aspx<br><br>
+                                        
+                                        3) Разобраться что такое и как создавать Stored Procedures. Добавлю ссылку сюда.<br><br>
+                                        
+                                        4) Задание: написать CRUD операций (4 хранимые процедуры) для работы с Order-ами.
+                                        a) Создать хранимую процедуру которая принимает OrderId возвращает Order и Order Details двумя разными селектами. (GetOrderById)
+                                        б) Создать хранимую процедуру которая принимает OrderID удаляет Order и Order Details по этому ID. (DeleteOrderById)
+                                        в) Создать хранимую процедуру которая принимает в себя информацию о Order и массив Order Details и создает новый Order в системе. (CreateOrder)
+                                        г) Создать хранимую процедуру которая принимает в себя Order ID и информацию о Order и массив Order Details и обновляет Order и его Order Details в системе.
+                                        
+                                        Давайте постараемся завтра до обеда SQL закончить. Задания ваши должны быть на 95% проверены. Смотрите коментарии и фиксайте проблемы. Пока будете изучать я буду проверять ваши задания целый день. Если будут какие то вопросы то пишите.
+                                    </div>
+                                </div>
 
-                    <div class="heading">
-                        <i class="fa fa-files-o fa-lg" style="color: #ff9000;"></i>
-                        <span>Shared Files</span>
-                        <i class="fa fa-caret-right fa-lg"></i>
-                    </div>
+                                <div class="item">
+                                    <div class="name">NODEJS_basic.pptx</div>
+                                    <span class="dateOfItem"></span>
+                                    <div class="content">PowerPoint Presentation</div>
+                                </div>
 
-                    <div class="heading">
-                        <i class="fa fa-bell-o fa-lg" style="color: #eb4d5c;"></i>
-                        <span>Notification Preferences</span>
-                        <i class="fa fa-caret-right fa-lg"></i>
+                                <div class="item">
+                                    <div class="name">alexander.shein</div>
+                                    <span class="dateOfItem">Sep 8th</span>
+                                    <div class="content">
+                                        1) Postgre SQL<br>
+                                        2) Northwind<br>
+                                        3) 3 Postgre SQL - Вкамитать 24 таском<br>
+                                        4) 4 ошибки транзакций в Postgre SQL - DIRTY READ - 26, LOST UPDATE - 27, REPEATABLE READ - 28, PHANTOM READ- 29<br>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="name">alexander.shein</div>
+                                    <span class="dateOfItem">Sep 7th</span>
+                                    <div class="content">
+                                        <a href="https://www.w3schools.com">https://www.w3schools.com</a>
+                                    </div>
+                                </div>
+                        </details>
+
+                        <div class="heading">
+                            <i class="fa fa-user-o fa-lg" style="color:#29a979;"></i>
+                            <span>14 Members</span>
+                            <i class="fa fa-caret-right fa-lg"></i>
+                        </div>
+
+                        <div class="heading">
+                            <i class="fa fa-files-o fa-lg" style="color: #ff9000;"></i>
+                            <span>Shared Files</span>
+                            <i class="fa fa-caret-right fa-lg"></i>
+                        </div>
+
+                        <div class="heading">
+                            <i class="fa fa-bell-o fa-lg" style="color: #eb4d5c;"></i>
+                            <span>Notification Preferences</span>
+                            <i class="fa fa-caret-right fa-lg"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

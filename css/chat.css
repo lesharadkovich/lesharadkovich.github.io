@@ -1,14 +1,9 @@
 #chat {
-    width: 75%;
-    background: #fff;
-    border-right: 1px solid lightgray;
-    display: flex;
-    flex-direction: column;
 }
 
 #messages {
-    overflow-y: auto;
-    height: 95%;
+    /* overflow-y: auto;
+    height: 95%; */
 }
 
 .message {
@@ -50,7 +45,7 @@
     height: 50%;
     display: flex;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 60px;
 }
 
 .hoverButtons i:first-child {
@@ -92,9 +87,9 @@
 
 
 #messageInput {
-    width: 95%;
+    /* width: 95%; */
     display: flex;
-    margin: 0 0 10px 10px;
+    margin: 0 10px 10px 10px;
     border: 2px solid #A0A0A2;
     border-radius: 8px;
 }
@@ -117,7 +112,7 @@
     width: 90%;
     max-width: 1200px;
     max-height: 50px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     overflow-y: auto;
     
     padding-left: 10px;

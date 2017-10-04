@@ -8,7 +8,7 @@
 }
 
 .title i {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .title div:hover, .title i:hover {
@@ -17,17 +17,11 @@
     cursor: pointer;
 }
 
-#leftmenu {
-    width: 220px;
-    height: 100vh;
-    background: #4D394B;
-    color: rgb(202,196,201);
-    flex-shrink: 0;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+/* #leftmenu {
+} */
+
+/* #topMenu {
+} */
 
 #account {
     padding-top: 15px;
