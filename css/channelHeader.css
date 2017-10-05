@@ -82,6 +82,9 @@
 }
 
 
+#left {
+    flex-shrink: 0;
+}
 
 #right {
     margin-right: 20px;

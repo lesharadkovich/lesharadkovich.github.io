@@ -1,5 +1,5 @@
-let createCustomScrollerFor = function (scrollWrapper, scroll, prefix) {    
-    let scrollContainer = document.querySelector(scroll);
+let createCustomScrollerFor = function (scrollWrapper) {    
+    let scrollContainer = document.querySelector(scrollWrapper);
     let scrollContentWrapper = document.querySelector(scrollWrapper);
     let contentPosition = 0;
     let scrollerBeingDragged = false;
@@ -31,29 +31,29 @@ let createCustomScrollerFor = function (scrollWrapper, scroll, prefix) {
         }
     }
 
-    function moveScroller(evt) {
-        let scrollPercentage = evt.target.scrollTop / scrollContentWrapper.scrollHeight;
+    function moveScroller(event) {
+        let scrollPercentage = event.target.scrollTop / scrollContentWrapper.scrollHeight;
         topPosition = scrollPercentage * (scrollContainer.offsetHeight - 5); 
         
         scroller.style.top = topPosition + 'px';
     }
 
-    function startDrag(evt) {
+    function startDrag(event) {
         scrollContentWrapper.className += ' noselect';
 
-        normalizedPosition = evt.pageY;
+        normalizedPosition = event.pageY;
         contentPosition = scrollContentWrapper.scrollTop;
         scrollerBeingDragged = true;
     }
 
-    function stopDrag(evt) {
+    function stopDrag(event) {
         scrollContentWrapper.classList.remove("noselect");
         scrollerBeingDragged = false;
     }
 
-    function scrollBarScroll(evt) {
+    function scrollBarScroll(event) {
         if (scrollerBeingDragged === true) {
-            let mouseDifferential = evt.pageY - normalizedPosition;
+            let mouseDifferential = event.pageY - normalizedPosition;
             let scrollEquivalent = mouseDifferential * (scrollContentWrapper.scrollHeight / scrollContainer.offsetHeight);
             scrollContentWrapper.scrollTop = contentPosition + scrollEquivalent;
         }
@@ -85,5 +85,5 @@ let createCustomScrollerFor = function (scrollWrapper, scroll, prefix) {
 };
 
 
-createCustomScrollerFor('#messages', '#messages');
-createCustomScrollerFor('#about', '#about');
+createCustomScrollerFor('#messages');
+createCustomScrollerFor('#about');
