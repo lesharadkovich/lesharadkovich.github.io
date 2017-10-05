@@ -39,12 +39,15 @@ let createCustomScrollerFor = function (scrollWrapper, scroll, prefix) {
     }
 
     function startDrag(evt) {
+        scrollContentWrapper.className += ' noselect';
+
         normalizedPosition = evt.pageY;
         contentPosition = scrollContentWrapper.scrollTop;
         scrollerBeingDragged = true;
     }
 
     function stopDrag(evt) {
+        scrollContentWrapper.classList.remove("noselect");
         scrollerBeingDragged = false;
     }
 

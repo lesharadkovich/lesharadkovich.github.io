@@ -97,6 +97,9 @@ summary::-webkit-details-marker {
     display: none;
 }
 
+summary:first-child {
+    display: block;
+}
 
 .item {
     border: 1px solid lightgray;
