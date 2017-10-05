@@ -34,6 +34,10 @@ let createCustomScrollerFor = function (scrollWrapper) {
     function moveScroller(event) {
         let scrollPercentage = event.target.scrollTop / scrollContentWrapper.scrollHeight;
         topPosition = scrollPercentage * (scrollContainer.offsetHeight - 5); 
+
+        if(scrollWrapper == '#messages') {
+            topPosition += 8;
+        }
         
         scroller.style.top = topPosition + 'px';
     }
@@ -47,7 +51,7 @@ let createCustomScrollerFor = function (scrollWrapper) {
     }
 
     function stopDrag(event) {
-        scrollContentWrapper.classList.remove("noselect");
+        scrollContentWrapper.classList.remove('noselect');
         scrollerBeingDragged = false;
     }
 
@@ -67,6 +71,10 @@ let createCustomScrollerFor = function (scrollWrapper) {
         
         if (scrollerHeight < scrollContentWrapper.offsetHeight){
             scroller.style.height = scrollerHeight + 'px';
+            if(scrollWrapper == '#messages') {
+                scroller.style.top = '8px';
+            }
+
 
             scrollContainer.appendChild(scroller);
             
