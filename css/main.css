@@ -27,5 +27,5 @@ a, a:link, a:visited {
 
 #fl {
     display: flex;
-    height: 95%;
+    height: calc(100vh - 50px);
 }
